@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Your existing styles */
+
+        nav {
+            background-color: #7EBBBB;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add responsive styles */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin-bottom: 10px;
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            margin: 0 auto;
+            /* Center the column */
+            width: 90%;
+            padding: 8px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        /* Add specific styles for the "professional" section */
+        .professional-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .professional-text {
+            flex-basis: 60%;
+            /* Adjust as needed */
+        }
+
+        .professional-image {
+            flex-basis: 35%;
+            /* Adjust as needed */
+            text-align: right;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #7EBBBB;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* Additional styles for the header */
+        .header {
+            background-color: white;
+            text-align: right;
+            /* Right-justify the text */
+            padding: 20px 48px 20px 0;
+            /* Padding with 48px on the right */
+        }
+
+        .header h1 {
+            font-family: 'Permanent Marker', cursive;
+            color: black;
+            margin: 0;
+        }
+
+        /* Add this CSS for the image animation */
+        .heroImg img {
+            width: 75%;
+            /* 25% smaller */
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease-in-out;
+            /* Add a smooth transition effect */
+        }
+
+        .heroImg img:hover {
+            transform: scale(1.1);
+            /* Scale the image up by 10% on hover */
+        }
+
+        .heroImg img {
+            width: 75%;
+            /* 25% smaller */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Add these styles to match the box sizing */
+        .skillContainer {
+            max-width: 30%;
+            /* Adjust the width as needed */
+            height: 100%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+        }
+
+        .skillContainer {
+            max-width: 30%;
+            /* Adjust the width as needed */
+            height: 100%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            /* Add borders or other styling as desired */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /* Add transitions for transform and box-shadow */
+        }
+
+        /* Scale and add shadow on hover */
+        .skillContainer:hover {
+            transform: scale(1.05);
+            /* Slightly scale up on hover */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            /* Add a subtle shadow on hover */
+        }
+
+        /* Style for h1, h3, p, and img tags inside .skillContainer can be added here */
+
+        .viewAllProjects {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Centered GIF container styles */
+        #gif-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            /* Ensure it's above the hero image */
+            display: none;
+            /* Initially hide it */
+        }
+
+        /* Adjust GIF width as needed */
+        #gif {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>I AM JARRETT</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="heroImg">
+        <!-- Use a <video> element to display the GIF -->
+        <img src="images/Screenshot 2023-09-13 at 11.40.57 PM.png" alt="No Parking">
+    </section>
+
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <h2>Jarrett Carlston</h2>
+                <p class="title">UI/UX Researcher and Designer</p>
+                <p>Linkedin.com/in/jarrettcarlston</p>
+                <div class="professional-section">
+                    <div class="professional-text">
+                        <h3>Professional</h3>
+                        <p>A recent UC Berkeley UX/UI graduate with a decade-long journey in the field, my expertise has
+                            been honed through my roles as a Support Operations Manager, where I focused on usability
+                            and empathy. Now, I am eager to channel my extensive experience and education into a new
+                            opportunity as a UX Researcher, leveraging my skills to contribute to the creation of
+                            exceptional digital experiences.</p>
+                    </div>
+                </div>
+                <h3>Personal</h3>
+                <p>Once upon a time, I used to curate beautiful art pieces in my own gallery, but these days, you'll
+                    find me chasing waves and munching on the best tacos around. From canvas to surfboard, I've
+                    transitioned my passion for aesthetics, bringing together my love for all things creative. Whether
+                    it's riding the perfect wave or savoring a mouthwatering taco, I'm all about embracing the vibrant
+                    beauty life has to offer.</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add a container for the GIF with id "gif-container" -->
+    <div id="gif-container">
+        <!-- Use a <video> element to display the GIF -->
+        <img src="images/Portfolio.gif" alt="Your GIF" id="gif">
+    </div>
+
+    <!-- Include JavaScript to show the GIF after a delay -->
+    <script>
+        // Delay in milliseconds (1000 ms = 1 second)
+        const delay = 5000; // 5 seconds
+
+        // Function to show the GIF after the delay
+        function showGif() {
+            const gifContainer = document.getElementById('gif-container');
+            gifContainer.style.display = 'block'; // Show the container
+        }
+
+        // Set a timeout to call the showGif function after the delay
+        setTimeout(showGif, delay);
+    </script>
+</body>
+
+</html>
